@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  /* Search Bar Styling */
+  .search-bar {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+    border-color: #ff5722;
+    box-shadow: 0px 5px 10px rgba(255, 87, 34, 0.5);
+  }
+  
+  .search-bar input:focus {
+    border-color: #ff5722;
+    outline: none;
+    box-shadow: 0px 10px 20px rgba(255, 87, 34, 0.7);
+  }
+  
+  /* Filter Buttons Section Styling */
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  
+  .filter-buttons .image-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .filter-buttons .image-button img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .filter-buttons .image-button:hover img {
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 3px solid #ff5722;
+    background-color: #fff5e1;
+  }
+  
+  .filter-buttons .image-button p {
+    font-size: 24px;
+    margin-top: 5px;
+    color: red;
+  }
+  
+  /* Dish Menu Grid */
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 cards per row */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Dish Card */
+  .menu-cards {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ensure the card fits the grid cell */
+    box-sizing: border-box;
+  }
+  
+  .menu-cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 87, 34, 0.2);
+    background-color: #fff3e0;
+  }
+  
+  /* Image Inside the Card */
+  .menu-cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 0 auto 15px;
+    display: block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dish Title Styling */
+  .menu-cards h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: darkred;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  /* Price and Servings Styling */
+  .menu-cards p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ff6347;
+  }
+  
+  /* Responsive Design */
+  
+  /* For screens up to 1024px (Tablets) */
+  @media (max-width: 1024px) {
+    .menu {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+  }
+  
+  /* For screens up to 768px (Small Tablets and Large Phones) */
+  @media (max-width: 768px) {
+    .menu {
+      grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    }
+  
+    .search-bar input {
+      width: 80%;
+    }
+  
+    .filter-buttons .image-button img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .filter-buttons .image-button p {
+      font-size: 18px;
+    }
+  }
+  
+  /* For screens up to 480px (Mobile) */
+  @media (max-width: 480px) {
+    .menu {
+      grid-template-columns: 1fr; /* 1 card per row */
+    }
+  
+    .search-bar input {
+      width: 90%;
+    }
+  
+    .filter-buttons .image-button img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .filter-buttons .image-button p {
+      font-size: 16px;
+    }
+  }
+  

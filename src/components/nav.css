@@ -1,0 +1,58 @@
+
+  
+  /* Style for the navbar */
+ 
+  .overlay-navbar {
+    position: absolute; 
+    top: 0;
+    width: 100%;
+   
+    background-color: rgba(255, 165, 0, 0.7); 
+    
+    z-index: 1000; 
+  }
+  
+  
+  /* Style for the navbar links */
+  .overlay-navbar .nav-link {
+    color:maroon; 
+ font-weight: 500;
+    font-size: 1.1rem; 
+    margin-right: 3rem; 
+   
+  }
+  
+  .overlay-navbar .nav-link:hover {
+  color: white;
+    text-decoration:none; 
+  }
+  
+ 
+  .overlay-navbar .navbar-brand {
+    color: #fff; 
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .overlay-navbar .navbar-toggler {
+    border-color: #fff; 
+    color:maroon;
+    background-color:rgb(247, 102, 136);
+    
+  }
+  
+  @media (max-width: 768px) {
+    .overlay-navbar .nav-link {
+      margin-right: 0;
+      padding: 0.5rem 1rem; 
+    }
+  }
+  /* Styling for the logo */
+.overlay-navbar img {
+  height: 50px; 
+  width: auto;  
+  margin-right: 1rem; 
+  object-fit: contain;
+}
+
+
